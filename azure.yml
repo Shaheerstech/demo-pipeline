@@ -25,7 +25,7 @@ stages:
     timeoutInMinutes: 120
     displayName: Build
     pool:
-      name: 'Video Analytics Agents (Prod)'
+      name: 'Azure Pipelines'
       demands:
       - Agent.OS -equals Linux
       - docker
