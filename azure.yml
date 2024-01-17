@@ -29,7 +29,7 @@ stages:
       demands:
       - Agent.OS -equals Linux
       - docker
-      - Agent.Name -equals Azure Pipelines
+      - Agent.Name -equals 'azure pipelines'
       
     steps:
     - checkout: self
