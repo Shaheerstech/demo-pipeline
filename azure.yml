@@ -26,6 +26,10 @@ stages:
     displayName: Build
     pool:
       name: 'Azure Pipelines'
+      demands:
+      - Agent.OS -equals Linux
+      - docker
+      - Agent.Name -equals Azure Pipelines
       
     steps:
     - checkout: self
