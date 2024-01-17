@@ -30,6 +30,7 @@ stages:
       - Agent.OS -equals Linux
       - docker
       - Agent.Name -equals 'azure pipelines'
+      - Agent.Version -gtVersion 2.163.1
       
     steps:
     - checkout: self
