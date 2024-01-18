@@ -28,8 +28,9 @@ stages:
       name: 'Azure Pipelines'
       demands:
       - Agent.OS -equals Linux
-      - docker
-      - Agent.Version -gtVersion 2.163.1
+      vmImage: ubuntu-latest
+     # - docker
+      #- Agent.Version -gtVersion 2.163.1
       
     steps:
     - checkout: self
